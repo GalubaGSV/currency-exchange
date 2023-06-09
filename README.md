@@ -17,7 +17,7 @@ The application's primary function is to allow users to convert between various 
 Aside from its core functionalities, the application is designed with the end-user in mind. It features a well-organized, intuitive user interface and maintains a high standard of code cleanliness and efficiency.
 
 ## 🛠 Technologies 🛠
-* This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.4.
+* Angular 16.0.4.
 * TypeScript
 * HTML
 * CSS
