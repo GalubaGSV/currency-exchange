@@ -7,8 +7,7 @@ export class CurrencyService {
   private currencyMap = new Map<string, number>([
     ['UAH', 980],
     ['USD', 840],
-    ['EUR', 978],
-    // додайте інші валюти, якщо потрібно
+    ['EUR', 978],    
   ]);
 
   getCurrencyCode(code: string): number | undefined {
@@ -19,8 +18,7 @@ export class CurrencyService {
       return undefined;
     }
   }
-
-  // додаємо метод, що повертає масив з ключів Map
+  
   getCurrencyKeys(): string[] {
     return Array.from(this.currencyMap.keys());
   }

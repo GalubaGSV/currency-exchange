@@ -9,7 +9,7 @@ import { map } from 'rxjs/operators';
 })
 export class ExternalCurrencyService {
 
-  private baseUrl = 'https://api.monobank.ua/bank/currency'
+  private baseUrl = 'https://api.monobank.ua/bank/currency'  
 
   constructor(private httpClient: HttpClient) { }
 
