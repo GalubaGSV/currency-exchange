@@ -1,0 +1,100 @@
+<div class="page-wrapper">
+
+  <!-- MENU SIDEBAR-->
+  <aside class="menu-sidebar d-none d-lg-block">
+    <div class="logo">
+      <a href="home.html">
+        <img src="assets/images/logo.jpg" width="75" alt="luv2shop" class="img-responsive">
+      </a>
+    </div>
+    <div class="menu-sidebar-content js-scrollbar1">
+      <nav class="navbar-sidebar">
+        <ul class="list-unstyled navbar-list">
+          <li>
+            <a href="https://github.com/">My GitHub</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/sergiy-golubchenko-74646485/">My LinkedIn</a>
+          </li>
+          <li>
+            <a href="https://t.me/galuba">My Telegram</a>
+          </li>
+          <li>
+            <a href="mailto:galuba1@gmail.com">My Email</a>
+          </li>
+          <li>
+            <a href="https://drive.google.com/file/d/1V7sYBPmfA3T-QZwLt4oYj9oYj6ff8lp8/view">My CV</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </aside>
+  <!-- END MENU SIDEBAR-->  
+
+		<!-- PAGE CONTAINER-->
+		<div class="page-container">
+			<!-- HEADER DESKTOP-->
+			<header class="header-desktop">
+				<div class="section-content section-content-p30">          
+					<div class="container-fluid">
+						<div class="header-wrap">				
+              <!-- MY COMPONENT -->			
+              <app-product-list></app-product-list>		
+              <div>														
+              </div>
+						</div>
+						<div class="account-wrap"></div>
+					</div>
+				</div>
+			</header>
+			<!-- END HEADER DESKTOP-->
+
+      <!-- MAIN CONTENT-->
+			<div class="main-content">        
+				<div class="section-content section-content-p30">
+          <h2>ТЗ: Конвертер валют</h2> 
+          
+          <b>Опис</b>
+          <div>Header з курсом валют</div>
+          <ul>
+            <li>У header-і необхідно відображати актуальний курс валют (USD, EUR) по відношенню до гривні (UAH)</li>
+            <li>Актуальний курс валют має приходити з будь-якого публічного API</li>            
+          </ul>          
+          
+          <div>Компонент із конвертацією</div>
+          <ul>
+            <li>Для однієї валюти має бути свій input і select.</li>
+            <li>окремий input+select для першої валюти, і окремий input+select для другої валюти</li>
+            <li>в input задається число, щоб вказати кількість одиниць для конвертування</li>
+            <li>у select має бути не менше трьох валют - UAH, USD, EUR.</li>
+            <li>конвертація має відбуватися в обох напрямках
+              <ul>
+                <li>при зміні значення у першій валюті, має перераховуватися значення у другій, і навпаки</li>
+                <li>при зміні валюти в кожному select-і конвертація обох валют повинна перераховуватися коректно</li>
+                
+              </ul>
+            </li>
+          </ul>           
+          <b>Плюсом буде:</b>
+          <ul>
+            <li>Добре продуманий інтерфейс та зовнішній вигляд</li>
+            <li>Чистий код</li>
+          </ul>
+          <hr>
+          <div>
+            Для реалізації вибраний API: <a href="https://api.monobank.ua/bank/currency">https://api.monobank.ua/bank/currency</a>
+          </div>
+				</div>
+			</div>
+		    <!-- END MAIN CONTENT-->      
+      </div>
+  </div>
+
+  <!-- END PAGE CONTAINER-->
+	<footer>
+		<ul>
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">Contact Us</a></li>
+			<li><a href="#">Help</a></li>
+		</ul>
+	</footer>

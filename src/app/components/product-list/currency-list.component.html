@@ -1,0 +1,23 @@
+<div class="form-header">   
+
+  <div class="input-group input-group-sm mb-3">
+    <span class="input-group-text" id="inputGroup-sizing-sm">Sell:</span>
+    <input type="text" [(ngModel)]="currencyValue1" (input)="onCalculate(1)" >
+    
+  
+  <select class="form-select form-select-sm" aria-label=".form-select-sm example" name="currency1" id="currency1" (change)="onChangeCurrency1($event)">
+    <option *ngFor="let currency of currencyKeys" [value]="currency">{{ currency }}</option>
+  </select> 
+</div>
+
+<div class="input-group input-group-sm mb-3">  
+  <span class="input-group-text" id="inputGroup-sizing-sm">Buy:</span>
+  <input type="text" [(ngModel)]="currencyValue2" (input)="onCalculate(2)">
+
+  <select  class="form-select form-select-sm" aria-label=".form-select-sm example" name="currency2" id="currency2" (change)="onChangeCurrency2($event)">
+    <option *ngFor="let currency of currencyKeys" [value]="currency">{{ currency }}</option>
+  </select>  </div>
+</div>
+
+  
+
